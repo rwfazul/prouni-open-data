@@ -1,4 +1,4 @@
-# Trabalho Final de Projeto e Gerência de Banco de Dados
+# prouniOpenData
 ELC119 Disciplina de Fundamentos de Banco de Dados ELC119  | 4° semestre do curso de Sistemas de Informação UFSM
 #### Grupo: Isabella Sakis, Rhauani Fazul
 
@@ -10,7 +10,7 @@ ELC119 Disciplina de Fundamentos de Banco de Dados ELC119  | 4° semestre do cur
 
 * Escolher uma fonte de dados com **dados abertos** disponibilizados na Web
 	- **Portal de dados abertos usado:** informacao.mec.gov.br || dados.gov.br 
-	- **Planilha escolhida:** Programa Universidade para Todos - ProUni -> 2016 - Bolsas concedidas e perfil dos beneficiários do Prouni
+	- **Planilha escolhida:** Programa Universidade para Todos - ProUni : 2016 - Bolsas concedidas e perfil dos beneficiários do Prouni
 	- **Disponível em:** http://dados.gov.br/dataset/mec-prouni
 	- **Formato:** .csv
 * Gerar o script SQL para a criação de um banco de dados com uma tabela que contenha todas as colunas existentes.

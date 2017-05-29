@@ -12,6 +12,7 @@ ELC119 Disciplina de Fundamentos de Banco de Dados ELC119  | 4° semestre do cur
 	- **Portal de dados abertos usado:** informacao.mec.gov.br || dados.gov.br 
 	- **Planilha escolhida:** Programa Universidade para Todos - ProUni : 2016 - Bolsas concedidas e perfil dos beneficiários do Prouni
 	- **Disponível em:** http://dados.gov.br/dataset/mec-prouni
+		- Link download direto: http://informacao.mec.gov.br/bilibs/PDA/PROUNI/PDA_PROUNI_2016_CSV.csv
 	- **Formato:** .csv
 * Gerar o script SQL para a criação de um banco de dados com uma tabela que contenha todas as colunas existentes.
 			

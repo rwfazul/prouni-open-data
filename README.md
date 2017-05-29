@@ -18,7 +18,7 @@ ELC119 Disciplina de Fundamentos de Banco de Dados ELC119  | 4° semestre do cur
 #### Normalização do esquema desnormalizado
 
 - Usar as formas normais para decompor a tabela desnormalizada em várias tabelas;
-- Gerar o script SQL para a criação das tabelas normalizadas dentro do mesmo banco de dados criado na etapa 1.
+- Gerar o script SQL para a criação das tabelas normalizadas dentro do mesmo banco de dados criado na etapa anterior.
 
 #### Modelagem conceitual do esquema normalizado
 
@@ -56,9 +56,10 @@ ELC119 Disciplina de Fundamentos de Banco de Dados ELC119  | 4° semestre do cur
 
 -----------------------------------------------------------------
 
-Itens do trabalho:
+#### Desenvolvimento:
 
-- [ ] Fonte escolhida
+- Escolha da fonte de dados abertos
+	+ [x] Ex. arquivos csv, panilhas excel, ...
 - Criação do banco
 	+ [ ] Script de criação da tabela desnormalizada
 	+ [ ] Script de criação dastabelas normalizadas

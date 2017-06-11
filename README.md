@@ -1,5 +1,5 @@
 # prouniOpenData
-ELC119 Disciplina de Fundamentos de Banco de Dados ELC119  | 4° semestre do curso de Sistemas de Informação UFSM
+ELC119 Disciplina de Fundamentos de Banco de Dados | 4° semestre do curso de Sistemas de Informação UFSM
 #### Grupo: Isabella Sakis, Rhauani Fazul
 
 # Descrição

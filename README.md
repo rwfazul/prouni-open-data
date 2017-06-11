@@ -2,9 +2,9 @@
 ELC119 Disciplina de Fundamentos de Banco de Dados | 4° semestre do curso de Sistemas de Informação UFSM
 #### Grupo: Isabella Sakis, Rhauani Fazul
 
-# Descrição
+## Descrição
 
-### O trabalho é dividido nas seguintes etapas:
+O trabalho é dividido nas seguintes etapas:
 
 #### Criação de um banco de dados desnormalizado
 
@@ -57,7 +57,7 @@ ELC119 Disciplina de Fundamentos de Banco de Dados | 4° semestre do curso de Si
 
 -----------------------------------------------------------------
 
-#### Desenvolvimento:
+## Desenvolvimento:
 
 - Escolha da fonte de dados abertos
 	+ [x] Ex. arquivos csv, panilhas excel, ...

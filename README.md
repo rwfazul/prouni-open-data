@@ -62,10 +62,10 @@ O trabalho é dividido nas seguintes etapas:
 - Escolha da fonte de dados abertos
 	+ [x] Ex. arquivos csv, panilhas excel, ...
 - Criação do banco
-	+ [ ] Script de criação da tabela desnormalizada
+	+ [X] Script de criação da tabela desnormalizada
 	+ [ ] Script de criação dastabelas normalizadas
 - Alimentação do banco
-	+ [ ] Scripts sql de alimentação, códigos de extração, ...
+	+ [X] Scripts sql de alimentação, códigos de extração, ...
 - Esquemas gráficos
 	+ [ ] Modelo ER
 	+ [ ] Modelo relacional

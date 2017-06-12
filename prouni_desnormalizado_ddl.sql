@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS prouniTabelao (
     nome_ies_bolsa                  VARCHAR(100),
     tipo_bolsa                      VARCHAR(30),
     modalidade_ensino_bolsa         VARCHAR(30),
-    nome_curso_bolsa                VARCHAR(60),
+    nome_curso_bolsa                VARCHAR(100),
     nome_turno_curso_bolsa          VARCHAR(20),
     cpf_beneficiario_bolsa          VARCHAR(20),
     sexo_beneficiario_bolsa         VARCHAR(15),

@@ -1,7 +1,7 @@
 USE prouni2016;
  
 LOAD DATA LOCAL INFILE '~/Desktop/amostra_pda_prouni_2016.csv'
-INTO TABLE prouniTabelao
+INTO TABLE prouni_tabelao
 CHARACTER SET latin1         
 FIELDS TERMINATED BY ';'
 OPTIONALLY ENCLOSED BY '"'	
@@ -24,5 +24,7 @@ IGNORE 1 LINES
     MUNICIPIO_BENEFICIARIO_BOLSA
 )
 SET dt_nascimento_beneficiario = STR_TO_DATE(@DT_NASCIMENTO_BENEFICIARIO, '%d-%m-%Y');
- 
 -- dt_nascimento_beneficiario = coluna tipo date da tabela prouniTabelao
+
+-- SET dt_nascimento_beneficiario = STR_TO_DATE(@DT_NASCIMENTO_BENEFICIARIO, '%d-%m-%Y');
+-- beneficiario_deficiente_fisico = IF (@BENEFICIARIO_DEFICIENTE_FISICO = 'SIM', 'S', 'N');

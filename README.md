@@ -14,6 +14,7 @@ O trabalho é dividido nas seguintes etapas:
 	- **Disponível em:** http://dados.gov.br/dataset/mec-prouni
 		- Link download direto: http://informacao.mec.gov.br/bilibs/PDA/PROUNI/PDA_PROUNI_2016_CSV.csv
 	- **Formato:** .csv
+	- **Codificação:** Default ISO 8859-1 (Latin1). Arquivo 'amostra_pda_prouni_2016' modificado para UTF-8.
 * Gerar o script SQL para a criação de um banco de dados com uma tabela que contenha todas as colunas existentes.
 			
 #### Normalização do esquema desnormalizado
@@ -63,7 +64,7 @@ O trabalho é dividido nas seguintes etapas:
 	+ [x] Ex. arquivos csv, panilhas excel, ...
 - Criação do banco
 	+ [X] Script de criação da tabela desnormalizada
-	+ [ ] Script de criação dastabelas normalizadas
+	+ [X] Script de criação dastabelas normalizadas
 - Alimentação do banco
 	+ [X] Scripts sql de alimentação, códigos de extração, ...
 - Esquemas gráficos

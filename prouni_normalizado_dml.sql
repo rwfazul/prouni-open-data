@@ -71,3 +71,4 @@ having soma > 1;
 */
 
 
+-- SHOW TABLE STATUS LIKE 'bolsa_prouni';

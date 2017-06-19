@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS prouni2016;
+CREATE DATABASE IF NOT EXISTS prouni2016 DEFAULT CHARACTER SET = utf8;
 USE prouni2016;
 
 DROP TABLE IF EXISTS bolsa_prouni;
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS info_ies (
     codigo_emec_ies     INT          NOT NULL,
     nome_ies_bolsa      VARCHAR(100) NOT NULL,
     PRIMARY KEY (codigo_emec_ies)
-);
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS curso (
     codigo_curso        INT          NOT NULL AUTO_INCREMENT,
@@ -22,14 +22,14 @@ CREATE TABLE IF NOT EXISTS curso (
     nome                VARCHAR(100) NOT NULL,
     turno               VARCHAR(20)  NOT NULL,
     PRIMARY KEY (codigo_curso)
-);
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS info_uf (
     codigo_uf   INT         NOT NULL AUTO_INCREMENT,
     regiao      VARCHAR(15) NOT NULL,
     sigla       VARCHAR(2)  NOT NULL,
     PRIMARY KEY (codigo_uf)
-);
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS municipio (
     codigo_municipio    INT         NOT NULL AUTO_INCREMENT,
@@ -37,19 +37,19 @@ CREATE TABLE IF NOT EXISTS municipio (
     codigo_uf           INT         NOT NULL,
     PRIMARY KEY (codigo_municipio),
     FOREIGN KEY (codigo_uf) REFERENCES info_uf (codigo_uf)
-);
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS `raça` (
     codigo_raca     INT         NOT NULL AUTO_INCREMENT,
     nome            VARCHAR(15) NOT NULL,
     PRIMARY KEY (codigo_raca)
-);
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS tipo_bolsa (
     codigo_tipo INT         NOT NULL AUTO_INCREMENT,	
     nome        VARCHAR(30) NOT NULL,
     PRIMARY KEY (codigo_tipo)
-);
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS beneficiario (
     codigo_beneficiario	INT         NOT NULL AUTO_INCREMENT,
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS beneficiario (
     PRIMARY KEY (codigo_beneficiario),
     FOREIGN KEY (codigo_raca)      REFERENCES `raça`    (codigo_raca),
     FOREIGN KEY (codigo_municipio) REFERENCES municipio (codigo_municipio)
-);
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS bolsa_prouni (
     codigo_bolsa_prouni     INT NOT NULL AUTO_INCREMENT,
@@ -76,5 +76,4 @@ CREATE TABLE IF NOT EXISTS bolsa_prouni (
     FOREIGN KEY (codigo_tipo)         REFERENCES tipo_bolsa   (codigo_tipo),
     FOREIGN KEY (codigo_curso)        REFERENCES curso        (codigo_curso),
     FOREIGN KEY (codigo_beneficiario) REFERENCES beneficiario (codigo_beneficiario)
-);
-
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;

@@ -61,12 +61,12 @@ O trabalho é dividido nas seguintes etapas:
 ## Desenvolvimento:
 
 - Escolha da fonte de dados abertos
-	+ [x] Ex. arquivos csv, panilhas excel, ...
+	+ [x] Ex. arquivos csv, panilhas excel, ... (**amostra_pda_prouni_2016.csv**)
 - Criação do banco
-	+ [X] Script de criação da tabela desnormalizada
-	+ [X] Script de criação dastabelas normalizadas
+	+ [X] Script de criação da tabela desnormalizada (**prouni_desnormalizado_ddl.sql**)
+	+ [X] Script de criação das tabelas normalizadas (**prouni_normalizado_ddl.sql**)
 - Alimentação do banco
-	+ [X] Scripts sql de alimentação, códigos de extração, ...
+	+ [X] Scripts sql de alimentação, códigos de extração, ... (**prouni_normalizado_dml.sql**, **importCSV_dml.sql**)
 - Esquemas gráficos
 	+ [ ] Modelo ER
 	+ [ ] Modelo relacional

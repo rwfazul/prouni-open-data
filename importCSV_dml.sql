@@ -2,7 +2,7 @@ USE prouni2016;
  
 LOAD DATA LOCAL INFILE '~/Desktop/amostra_pda_prouni_2016.csv'
 INTO TABLE prouni_tabelao
-CHARACTER SET latin1         
+CHARACTER SET utf8      
 FIELDS TERMINATED BY ';'
 OPTIONALLY ENCLOSED BY '"'	
 LINES TERMINATED BY '\n'

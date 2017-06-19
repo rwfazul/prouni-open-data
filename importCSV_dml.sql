@@ -1,7 +1,7 @@
 USE prouni2016;
  
 LOAD DATA LOCAL INFILE '~/Desktop/amostra_pda_prouni_2016.csv'
-INTO TABLE prouni_tabelao
+INTO TABLE bolsa_desnormalizado 
 CHARACTER SET utf8      
 FIELDS TERMINATED BY ';'
 OPTIONALLY ENCLOSED BY '"'	

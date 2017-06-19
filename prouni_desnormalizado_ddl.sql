@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS prouni2016;
-CREATE DATABASE IF NOT EXISTS prouni2016;
+CREATE DATABASE IF NOT EXISTS prouni2016 DEFAULT CHARACTER SET = utf8;
 USE prouni2016;
 
 CREATE TABLE IF NOT EXISTS prouni_tabelao (
@@ -20,5 +20,4 @@ CREATE TABLE IF NOT EXISTS prouni_tabelao (
     sigla_uf_beneficiario_bolsa     VARCHAR(2) NOT NULL,
     municipio_beneficiario_bolsa    VARCHAR(60) NOT NULL,
     PRIMARY KEY (codigo_registro_tabelao)
-);
-
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;

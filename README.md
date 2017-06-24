@@ -69,7 +69,7 @@ O trabalho é dividido nas seguintes etapas:
 	+ [X] Scripts sql de alimentação, códigos de extração, ... (**prouni_normalizado_dml.sql**, **importCSV_dml.sql**)
 - Esquemas gráficos
 	+ [ ] Modelo ER
-	+ [ ] Modelo relacional
+	+ [X] Modelo relacional (**modelo_relacional.png**)
 - Consultas elaboradas (5)
 	+ [ ] Scripts SQL
 - Apresentação final

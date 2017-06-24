@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS info_ies (
 ) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS curso (
-    codigo_curso        INT NOT NULL AUTO_INCREMENT,
-    codigo_emec_ies     INT NOT NULL,
+    codigo_curso        INT          NOT NULL AUTO_INCREMENT,
+    codigo_emec_ies     INT          NOT NULL,
     modalidade_ensino   VARCHAR(30)  NOT NULL,
-    nome                VARCHAR(100) NOT NULL,
+    nome_curso          VARCHAR(100) NOT NULL,
     turno               VARCHAR(20)  NOT NULL,
     PRIMARY KEY (codigo_curso, codigo_emec_ies),
     FOREIGN KEY (codigo_emec_ies) REFERENCES info_ies(codigo_emec_ies)
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS info_uf (
 
 CREATE TABLE IF NOT EXISTS municipio (
     codigo_municipio    INT         NOT NULL AUTO_INCREMENT,
-    nome                VARCHAR(60) NOT NULL,
+    nome_municipio      VARCHAR(60) NOT NULL,
     codigo_uf           INT         NOT NULL,
     PRIMARY KEY (codigo_municipio),
     FOREIGN KEY (codigo_uf) REFERENCES info_uf (codigo_uf)
@@ -43,13 +43,13 @@ CREATE TABLE IF NOT EXISTS municipio (
 
 CREATE TABLE IF NOT EXISTS `raça` (
     codigo_raca     INT         NOT NULL AUTO_INCREMENT,
-    nome            VARCHAR(15) NOT NULL,
+    raca            VARCHAR(15) NOT NULL,
     PRIMARY KEY (codigo_raca)
 ) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS tipo_bolsa (
-    codigo_tipo INT         NOT NULL AUTO_INCREMENT,	
-    nome        VARCHAR(30) NOT NULL,
+    codigo_tipo      INT         NOT NULL AUTO_INCREMENT,	
+    tipo_bolsa       VARCHAR(30) NOT NULL,
     PRIMARY KEY (codigo_tipo)
 ) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 

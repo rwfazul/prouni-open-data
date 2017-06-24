@@ -6,8 +6,8 @@ SELECT DISTINCT codigo_emec_ies_bolsa, nome_ies_bolsa
 FROM            bolsa_desnormalizado;
 
 -- CURSO
-INSERT INTO     curso (modalidade_ensino, nome, turno)
-SELECT DISTINCT modalidade_ensino_bolsa, nome_curso_bolsa, nome_turno_curso_bolsa
+INSERT INTO     curso (modalidade_ensino, codigo_emec_ies, nome, turno)
+SELECT DISTINCT modalidade_ensino_bolsa, codigo_emec_ies_bolsa, nome_curso_bolsa, nome_turno_curso_bolsa
 FROM            bolsa_desnormalizado;
 
 -- INFO_UF
@@ -39,13 +39,14 @@ INNER JOIN      `raça`               AS t2 ON t2.nome = t1.raca_beneficiario_bo
 INNER JOIN      municipio            AS t3 ON t3.nome = t1.municipio_beneficiario_bolsa;
 
 -- BOLSA_PROUNI
-INSERT INTO     bolsa_prouni(ano_concessao, codigo_emec_ies, codigo_tipo, codigo_curso, codigo_beneficiario)
-SELECT          t1.ano_concessao_bolsa, t1.codigo_emec_ies_bolsa, t2.codigo_tipo, t3.codigo_curso, t4.codigo_beneficiario
+INSERT INTO     bolsa_prouni(ano_concessao, codigo_tipo, codigo_curso, codigo_beneficiario)
+SELECT          t1.ano_concessao_bolsa, t2.codigo_tipo, t3.codigo_curso, t4.codigo_beneficiario
 FROM            bolsa_desnormalizado AS t1
 INNER JOIN      tipo_bolsa           AS t2 ON t2.nome = t1.tipo_bolsa
 INNER JOIN      curso                AS t3 ON t3.modalidade_ensino = t1.modalidade_ensino_bolsa
 AND             t3.nome  = t1.nome_curso_bolsa 
 AND             t3.turno = t1.nome_turno_curso_bolsa
+AND             t3.codigo_emec_ies = t1.codigo_emec_ies_bolsa 
 INNER JOIN      beneficiario         AS t4 ON t4.cpf = t1.cpf_beneficiario_bolsa
 AND             t4.dt_nascimento = t1.dt_nascimento_beneficiario;
 

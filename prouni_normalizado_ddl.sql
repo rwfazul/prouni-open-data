@@ -17,11 +17,13 @@ CREATE TABLE IF NOT EXISTS info_ies (
 ) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS curso (
-    codigo_curso        INT          NOT NULL AUTO_INCREMENT,
+    codigo_curso        INT NOT NULL AUTO_INCREMENT,
+	codigo_emec_ies     INT NOT NULL,
     modalidade_ensino   VARCHAR(30)  NOT NULL,
     nome                VARCHAR(100) NOT NULL,
     turno               VARCHAR(20)  NOT NULL,
-    PRIMARY KEY (codigo_curso)
+    PRIMARY KEY (codigo_curso, codigo_emec_ies),
+	FOREIGN KEY (codigo_emec_ies) REFERENCES info_ies(codigo_emec_ies)
 ) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS info_uf (
@@ -67,12 +69,10 @@ CREATE TABLE IF NOT EXISTS beneficiario (
 CREATE TABLE IF NOT EXISTS bolsa_prouni (
     codigo_bolsa_prouni     INT NOT NULL AUTO_INCREMENT,
     ano_concessao           INT NOT NULL,
-    codigo_emec_ies         INT NOT NULL,
     codigo_tipo             INT NOT NULL,
     codigo_curso            INT NOT NULL,
     codigo_beneficiario     INT NOT NULL,
     PRIMARY KEY (codigo_bolsa_prouni),
-    FOREIGN KEY (codigo_emec_ies)     REFERENCES info_ies     (codigo_emec_ies),
     FOREIGN KEY (codigo_tipo)         REFERENCES tipo_bolsa   (codigo_tipo),
     FOREIGN KEY (codigo_curso)        REFERENCES curso        (codigo_curso),
     FOREIGN KEY (codigo_beneficiario) REFERENCES beneficiario (codigo_beneficiario)

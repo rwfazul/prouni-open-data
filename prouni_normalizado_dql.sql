@@ -146,8 +146,3 @@ FROM
 NATURAL JOIN curso 
 NATURAL JOIN info_ies t_extra
 GROUP BY     t_extra.nome_ies_bolsa; */
-
-
-
-
-

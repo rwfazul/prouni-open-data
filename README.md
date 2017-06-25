@@ -68,11 +68,29 @@ O trabalho é dividido nas seguintes etapas:
 - Alimentação do banco
 	+ [X] Scripts sql de alimentação, códigos de extração, ... (**prouni_normalizado_dml.sql**, **importCSV_dml.sql**)
 - Esquemas gráficos
-	+ [ ] Modelo ER
+	+ [X] Modelo ER (**modelo_er.png**)
 	+ [X] Modelo relacional (**modelo_relacional.png**)
 - Consultas elaboradas (5)
 	+ [X] Scripts SQL (**prouni_normalizado_dql.sql**)
 - Apresentação final
-	+ [ ] Slides onde a solução adotada é relatada.
+	+ [ ] Slides onde a solução adotada é relatada (**apresentacao.pdf**)
+
+
+-----------------------------------------------------------------
+
+## Execução:
+
+a) prouni_desnormalizado_ddl.sql -> Criação tabela desnormalizada
+b) prouni_normalizado_ddl.sql    -> Criação tabelas normalizadas
+c) importCSV_dml.sql             -> Extração dados .csv para tabela desnormalizada ***
+d) prouni_normalizado_dml.sql    -> Alimentação tabelas normalizadas com dados tabela desnormalizada
+e) prouni_normalizado_dql        -> Consultas em cima das tabelas normalizadas
+
+
+*** Necessita do caminho até o arquivo csv 'amostra_pda_prouni_2016.csv'. 
+    Por padrão esta com caminho absoluto a partir do usuário do sistema (Ambiente Linux). 
+    Windows -> Utilizar 'C:\\file_path...'
+
+
 
 

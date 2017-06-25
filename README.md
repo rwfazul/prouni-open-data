@@ -71,7 +71,7 @@ O trabalho é dividido nas seguintes etapas:
 	+ [ ] Modelo ER
 	+ [X] Modelo relacional (**modelo_relacional.png**)
 - Consultas elaboradas (5)
-	+ [ ] Scripts SQL
+	+ [X] Scripts SQL (**prouni_normalizado_dql**)
 - Apresentação final
 	+ [ ] Slides onde a solução adotada é relatada.
 

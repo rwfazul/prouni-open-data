@@ -83,14 +83,10 @@ O trabalho é dividido nas seguintes etapas:
 a) prouni_desnormalizado_ddl.sql -> Criação tabela desnormalizada <br/>
 b) prouni_normalizado_ddl.sql    -> Criação tabelas normalizadas<br/>
 c) importCSV_dml.sql             -> Extração dados .csv para tabela desnormalizada ***<br/>
-d) prouni_normalizado_dml.sql    -> Alimentação tabelas normalizadas com dados tabela desnormalizada<br/>
+d) prouni_normalizado_dml.sql    -> Alimentação tabelas normalizadas com dados da tabela desnormalizada<br/>
 e) prouni_normalizado_dql        -> Consultas em cima das tabelas normalizadas<br/>	
 
 
 *** Necessita do caminho até o arquivo csv 'amostra_pda_prouni_2016.csv'. <br/>
-    Por padrão esta com caminho absoluto a partir do usuário do sistema (Ambiente Linux). <br/>
+    Por padrão está com caminho absoluto a partir do usuário do sistema (Ambiente Linux). <br/>
     Windows -> Utilizar 'C:\\file_path...'
-
-
-
-

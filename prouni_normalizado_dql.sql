@@ -49,7 +49,7 @@ NATURAL LEFT OUTER JOIN
 
 -- • junções entre três ou mais tabelas
 --  Listar dados completos sobre determinada bolsa a partir de CPF do beneficiario
--- simula a consulta: SELECT * FROM bolsa_desnormalizado WHERE cpf_beneficiario_bolsa LIKE'%882932%';
+-- simula a consulta: SELECT * FROM bolsa_desnormalizado WHERE cpf_beneficiario_bolsa LIKE '%882932%';
 SELECT       t1.ano_concessao, t2.codigo_emec_ies, t3.nome_ies_bolsa, t4.tipo_bolsa, t2.modalidade_ensino, 
              t2.nome_curso, t2.turno, t5.cpf, t5.sexo, t6.raca, t5.dt_nascimento, t5.deficiente_fisico, 
              t8.regiao, t8.sigla, t7.nome_municipio
@@ -121,7 +121,7 @@ NATURAL RIGHT OUTER JOIN
 NATURAL JOIN info_ies t3;
 
 -- Retorna a media de cada sexo em consultas separadas
-SELECT   t_extra.nome_ies_bolsa, ROUND( AVG(t_intra.homens) ) media_homens
+/* SELECT   t_extra.nome_ies_bolsa, ROUND( AVG(t_intra.homens) ) media_homens
 FROM 	
 (
     SELECT       codigo_curso, COUNT(sexo) AS homens
@@ -145,7 +145,7 @@ FROM
 ) AS t_intra
 NATURAL JOIN curso 
 NATURAL JOIN info_ies t_extra
-GROUP BY     t_extra.nome_ies_bolsa;
+GROUP BY     t_extra.nome_ies_bolsa; */
 
 
 
